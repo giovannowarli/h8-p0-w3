@@ -1,12 +1,18 @@
 function pasanganTerbesar(num) {
-    var numString = String(num);
-    var arr = [];
-    var largestArr=[];
-    for (i=0;i<numString.length-1;i++){
-        arr.push(Number(numString[i]+numString[i+1]));
+    numString = num.toString();
+    newArr = [];
+    for(i=0;i<numString.length-1;i++){
+      newArr.push(numString[i]+numString[i+1])
     }
-          return Math.max(...arr);
+    console.log(newArr);
+    let compare = 0;
+    for(i=0;i<newArr.length;i++){
+      if(newArr[i]>compare){
+        compare = newArr[i];
       }
+    }
+    return compare;
+  }
   
   
   // TEST CASES

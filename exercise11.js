@@ -5,8 +5,7 @@ function tentukanDeretAritmatika(arr) {
       //console.log(testSelisih)
       if (testSelisih !== selisih){
         return false;
-     } else {
-     }
+     } 
     } 
     return true;
   }

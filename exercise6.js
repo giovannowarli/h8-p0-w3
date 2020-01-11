@@ -1,17 +1,17 @@
 function angkaPalindrome(num) {
-    for (i=0; i<num;i++){
-      num++
-      var numString = String(num);
-      var numLength = numString.length;
-      var newString = '';
-      for (j=numLength-1; j>=0; j--){
-        newString += numString[j];
-      }
-      if (numString === newString){
-        return num;
-      }
-      }  
+  for (i=0; i<num; i++) {
+    num++
+    // console.log(num);
+    var numString = num.toString();
+    var numBalik = '';
+    for (j=numString.length-1; j>= 0; j--){
+      numBalik += numString[j];
     }
+    if (numString === numBalik){
+      return num;
+    }
+  }
+}
       // TEST CASES
       //console.log(angkaPalindrome(8)); // 9
       console.log(angkaPalindrome(10)); // 11
